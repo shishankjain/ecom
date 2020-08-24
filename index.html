@@ -16,7 +16,7 @@
         <img src="images/GoEase.png" width=200px>
       </div>
       <nav>
-        <ul>
+        <ul id="MenuItems">
           <li><a href="">Home</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">About</a></li>
@@ -25,6 +25,7 @@
         </ul>
       </nav>
       <img src="images/Cart.png" width="100px" height="70px">
+      <img src="images/menu.png"class="menu-icon" onclick="menutoggle()">
     </div>
     <div class="row">
       <div class="col-2">
@@ -293,5 +294,49 @@
     </div>
   </div>
 </div>
+<!-- -----------------------Footer--------- -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <img src="images/GoEase.png" alt="">
+        <p>Our purpose is to make shopping easier and save money with local shopping.</p>
+      </div>
+      <div class="footer-col-2">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate Program</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2020 - Go Ease</p>
+  </div>
+</div>
+<!-- -----------------js for toggle menu----------- -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight=="0px"){
+        MenuItems.style.maxHeight="200px";
+      }
+      else{
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
 </body>
 </html>
